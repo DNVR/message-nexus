@@ -1,0 +1,23 @@
+{
+  "name": "@dnvr/message-nexus",
+  "version": "1.0.0",
+  "description": "A simple message broker.",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DNVR/message-nexus.git"
+  },
+  "author": "Denver Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DNVR/message-nexus/issues"
+  },
+  "homepage": "https://github.com/DNVR/message-nexus#readme",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
