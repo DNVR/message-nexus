@@ -3,7 +3,9 @@
 A simple message broker.
 
 ## Install
-`npm install @dnvr/message-nexus`
+```CLI
+npm install @dnvr/message-nexus
+```
 
 ## Usage
 ```JS
