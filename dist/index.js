@@ -67,7 +67,7 @@ var MessageNexusEvent = /** @class */ (function (_super) {
             return MessageNexusArgsMap.get(this);
         },
         set: function (value) { },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return MessageNexusEvent;
