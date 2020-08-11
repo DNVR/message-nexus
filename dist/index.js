@@ -82,7 +82,7 @@ var MessageNexus = /** @class */ (function () {
         MessageNexus2Target.set(this, new fixes_1.default);
         MessageNexus2FunctionMap.set(this, new WeakMap);
     }
-    MessageNexus.prototype.proclaim = function (type) {
+    MessageNexus.prototype.publish = function (type) {
         var args = [];
         for (var _i = 1; _i < arguments.length; _i++) {
             args[_i - 1] = arguments[_i];
@@ -91,7 +91,7 @@ var MessageNexus = /** @class */ (function () {
         var event = new MessageNexusEvent(type, { args: args });
         void MessageNexus2Target.get(this).dispatchEvent(event);
     };
-    MessageNexus.prototype.devote = function (type, callback) {
+    MessageNexus.prototype.subscribe = function (type, callback) {
         type = "" + [type];
         var f;
         var list = MessageNexus2FunctionMap.get(this);
@@ -111,7 +111,7 @@ var MessageNexus = /** @class */ (function () {
         }
         void MessageNexus2Target.get(this).addEventListener(type, f, listenerOptions);
     };
-    MessageNexus.prototype.neglect = function (type, callback) {
+    MessageNexus.prototype.unsubscribe = function (type, callback) {
         type = "" + [type];
         var list = MessageNexus2FunctionMap.get(this);
         if (list.has(callback)) {

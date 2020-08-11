@@ -4,5 +4,11 @@
 node_modules
 .vscode
 
+# output
+dist
+
+# types
+types
+
 # misc
 .DS_Store

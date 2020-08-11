@@ -38,14 +38,14 @@ class MessageNexus {
     MessageNexus2FunctionMap.set( this, new WeakMap )
   }
 
-  proclaim ( type: EventString, ...args: EventParameters ) {
+  publish ( type: EventString, ...args: EventParameters ) {
     type = `${ [ type ] }`
     let event = new MessageNexusEvent( type, { args } )
 
     void ( MessageNexus2Target.get( this ) as EventTarget ).dispatchEvent( event )
   }
 
-  devote ( type: EventString, callback: EventCallback ) {
+  subscribe ( type: EventString, callback: EventCallback ) {
     type = `${ [ type ] }`
 
     let f: EventListener
@@ -65,7 +65,7 @@ class MessageNexus {
     void ( MessageNexus2Target.get( this ) as EventTarget ).addEventListener( type, f, listenerOptions )
   }
 
-  neglect ( type: EventString, callback: EventCallback ) {
+  unsubscribe ( type: EventString, callback: EventCallback ) {
     type = `${ [ type ] }`
 
     let list = MessageNexus2FunctionMap.get( this ) as FunctionMap
