@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "A simple message broker.",
   "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p ."
   },
