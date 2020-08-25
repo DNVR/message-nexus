@@ -2,7 +2,7 @@
   "name": "@dnvr/message-nexus",
   "version": "1.0.6",
   "description": "A simple message broker.",
-  "main": "dist/index.js",
+  "browser": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build:clean": "npx rimraf dist",
