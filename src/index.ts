@@ -19,7 +19,9 @@ class MessageNexusEvent extends Event {
   get args (): EventParameters {
     return MessageNexusArgsMap.get( this ) as EventParameters
   }
-  set args ( value ) { }
+  set args ( value: EventParameters ) {
+    value
+  }
 }
 
 let listenerOptions: EventListenerOptions = {
