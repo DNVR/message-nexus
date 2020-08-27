@@ -17,7 +17,7 @@
     "url": "git+https://github.com/DNVR/message-nexus.git"
   },
   "author": "Denver Dias",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DNVR/message-nexus/issues"
   },
